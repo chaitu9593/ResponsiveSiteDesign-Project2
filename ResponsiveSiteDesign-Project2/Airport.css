@@ -1,0 +1,337 @@
+body {
+    background-color: #1a1a1a;
+    color: #262626;
+    padding: 2em;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    background-color: #9d9d9d;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+
+}
+
+h5 {
+    float: right;
+}
+
+main {
+    display: block;
+    overflow: auto;
+    margin: 5px;
+}
+
+
+
+#door {
+    float: left;
+    padding-right: 19px;
+}
+
+#find {
+
+
+    padding-left: 1em;
+    margin-left: 1em;
+
+}
+
+
+#hero {
+    text-align: center;
+    padding: 2px;
+
+
+}
+
+nav {
+    display: block;
+
+    float: left;
+    width: 200px;
+
+
+    text-decoration-style: solid;
+    padding: 20px;
+
+    font-weight: bold;
+    word-spacing: 1em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+    color: white;
+
+
+}
+
+nav a:link {
+    color: #121114;
+}
+
+nav a:visited {
+    color: #354040;
+}
+
+nav a:hover {
+    color: #0f0d0a;
+    border: 1px solid #333333;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    background-color: #9d9d9d;
+    box-shadow: 3px 3px 3px;
+    color: black;
+    margin-bottom: 10px;
+    border: 1px solid black;
+
+}
+
+.class {
+    font-style: italic;
+}
+
+footer {
+    background-color: #9d9d9d;
+    text-align: center;
+    font-style: italic;
+    text-indent: 0.6em;
+    padding: 0.5em;
+}
+
+
+#wrapper {
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F5F5;
+    min-width: 1280px;
+    max-width: 1400px;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+th,
+td {
+
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #9d9d9d;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        padding-top: 1px;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        padding-left: 2em;
+
+    }
+
+    nav a {
+        padding: 0.2em;
+        float: left;
+        width: 23%;
+        margin-left: 0.3em;
+        margin-bottom: 0px;
+    }
+
+    main {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+        font-size: 90%;
+        margin: 0;
+        clear: both;
+
+    }
+
+    #hero {
+        width: 100%;
+        height: auto;
+    }
+
+    h2,
+    h3,
+    p,
+    dl {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    
+    h1 {
+        font-size: 2em;
+        padding-top: 0.25em;
+
+        text-align: center;
+    }
+
+    nav a {
+        padding: 0.5em;
+        float: left;
+        width: 45%;
+        margin-left: 0.3em;
+        min-width: 6em;
+        margin-bottom: 0.5em;
+    }
+
+    main {
+
+        padding-top: 0;
+        clear: both;
+
+    }
+
+    #door {
+        display: none;
+    }
+
+    #hero {
+        display: none;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0.5em;
+    }
+
+
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    
+    td:before {
+
+        position: absolute;
+
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+
+    td:nth-of-type(1):before {
+        content: "Time";
+        font-weight: bold;
+    }
+
+    td:nth-of-type(2):before {
+        content: "Flight";font-weight: bold;
+    }
+
+    td#departure:nth-of-type(3):before {
+        content: "To";font-weight: bold;
+    }
+
+     td:nth-of-type(3):before {
+        content: "From";font-weight: bold;
+    }
+    
+    td:nth-of-type(4):before {
+        content: "Airline";font-weight: bold;
+    }
+
+    td:nth-of-type(5):before {
+        content: "Aircraft";font-weight: bold;
+    }
+
+    td:nth-of-type(6):before {
+        content: "Status";font-weight: bold;
+    }
+}
